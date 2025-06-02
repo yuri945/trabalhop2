@@ -1,0 +1,44 @@
+bubble sort é um jeito simples de ordenar uma lista.
+ele compara dois numeros vizinhos e troca se estiverem fora de ordem.
+repete isso varias vezes ate tudo fica certo.
+como funciona: compara dois a dois.
+troca se precisar.
+faz isso ate ningurem mais precisar trocar.
+quando usar: para aprender ou com listas pequenas.
+problema: é lento para listas grandes, demora mais que os outros metodos.
+
+
+bucket sort: é um algoritmo que divide os numeros em grupos, ordena cada grupo e junta tudo no final.
+bom para numeros decimais bem distribuidos, ruim se os dados forem muito diferentes.
+vantagem: rapido em alguns casos.
+desvantagem: precisa escolher bem os buckets.
+
+
+counting sort é um algoritmo que conta quantas vezes cada numero aparece, usa essas contagens para colocar os numeros na ordem certa.
+rapido quando os numeros sao inteiros e não variam muito.
+não serve para numeros com valores muito distantes ou decimais.
+vantagem: pode ser O(n).
+desvantagem: usa muita memoria se os numeros forem grandes.
+
+
+heap sort é um algoritmo que transforma a lista em uma estrutura chamada heap(arvore), remove o maior (ou menor) elemento do heap e coloca na lista ordenada.
+repete ate ordena tudo.
+rapido e  não precisa de memoria extra, um pouco mais dificil de entender que outros metodos.
+vantagem sempre O (n log n), desvantagem: não e tao rapido quanto ao quick sort na pratica.
+
+insertion sort é um algoritmo que pega um numero de cada vez, coloca ele no lugar certo comparando com os anteriores, repete ate ordenar tudo.
+simples e bom para listas pequenas, lenta para listas grandes.
+
+merge sort é um algoritmo que divide a lista ao meio varias vezes, ordena cada parte separadamente e junta as partes ja ordenadas.
+rapido e sempre O(n log n), usa mais memoria por causa das divisões.
+
+
+quick sort é um algoritmo que escolhe um numero (pivô), separa os menores dos maiores que o pivô e ordena cada partede forma recursiva.
+muito rapido na pratica (0(n log n )medio), pode ser lento no pior caso (o(n2)).
+
+
+radix sort é um algoritmo que ordena os numero digito por digito, da menor para a maior posição( ou vice-versa), usa outro algoritmo simples (como counting sort)para cada digito.
+rapido para numeros inteiros com poucos digitos, não serve bem para numero com muitos digitos e casa decimais.
+
+selection sort é um algoritmo que encontra o menor elemento e coloca na frente, repete isso com o restante da lista ate ordenar tudo.
+simples de entender, lento para listas grandes (O(n2)0).
